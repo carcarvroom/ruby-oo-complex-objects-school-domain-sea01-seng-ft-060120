@@ -22,8 +22,13 @@ class School
   end
   
   def sort
+<<<<<<< HEAD
     @roster.each do |grades, student|
       student.sort!
+=======
+    @roster.select do |grades, individual_grade|
+      grades.sort
+>>>>>>> 26101c1b53fec883b5cfd893b2ec7bb20fb3b50d
     end
   end
 
